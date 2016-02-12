@@ -6,7 +6,7 @@ Use the 'a' key to travel left, 's' to stop moving, and 'd' to travel right.
 Your score will increase based on the number of ghosts you've scared away.
 If a ghost runs into the flashlight, it's game over.
 
-[Live Demo](phantomgame.herokuapp.com)
+[Live Demo](http://jennyj2012.github.io/phantoms/)
 
 
 ![Phantoms](./basic-shot.png)
