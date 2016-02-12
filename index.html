@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Phantoms</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <script type="application/javascript" src="vendor/keymaster.js"></script>
+
+    <script type="application/javascript" src="lib/util.js"></script>
+    <script type="application/javascript" src="lib/movingObject.js"></script>
+    <script type="application/javascript" src="lib/phantom.js"></script>
+    <script type="application/javascript" src="lib/player.js"></script>
+    <script type="application/javascript" src="lib/flashlight.js"></script>
+    <script type="application/javascript" src="lib/game.js"></script>
+    <script type="application/javascript" src="lib/gameView.js"></script>
+    <script type="application/javascript">
+      (function () {
+        var canvasEl = document.getElementsByTagName("canvas")[0];
+        canvasEl.width = Phantoms.Game.DIM_X;
+        canvasEl.height = Phantoms.Game.DIM_Y;
+
+        var ctx = canvasEl.getContext("2d");
+        var game = new Phantoms.Game();
+        new Phantoms.GameView(game, ctx).start();
+
+        key("enter", function () {
+          var game = new Phantoms.Game();
+          new Phantoms.GameView(game, ctx).start();
+        }.bind(this));
+      })();
+    </script>
+  </body>
+</html>
