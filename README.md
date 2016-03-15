@@ -11,7 +11,7 @@ If a ghost runs into the flashlight, it's game over.
 [Live Demo](http://jennyj2012.github.io/phantoms/)
 
 
-![Phantoms](./basic-shot.png)
+[![Phantoms](./basic-shot.png)](http://jennyj2012.github.io/phantoms/)
 
 #FEATURES
  * Custom collision detection for rotated geometric shapes
