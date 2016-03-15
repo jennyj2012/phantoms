@@ -1,0 +1,46 @@
+html, body, h1, h2, h3, h4, p, a, ul, li{
+  margin: 0;
+     border: 0;
+     padding: 0;
+     outline: 0;
+
+     font: inherit;
+     color: inherit;
+     text-align: inherit;
+     text-decoration: inherit;
+     vertical-align: inherit;
+     box-sizing: inherit;
+
+     background: inherit
+}
+body {
+  overflow: hidden;
+  background-color: transparent;
+  color: #fff;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+.links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 50px;
+  list-style: none;
+}
+
+.links li {
+  padding: 10px 10px;
+  float: left;
+}
+
+.links a {
+  color: #fff;
+}

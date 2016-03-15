@@ -16,7 +16,6 @@ If a ghost runs into the flashlight, it's game over.
 #FEATURES
  * Custom collision detection for rotated geometric shapes
  * Rotation and keyboard movement of flashlight synchronized with flashlight beam
- * AnimationFrame requests over setInterval for optimal browser animation
 
 #OVERVIEW
 A rotational matrix was implemented in accordance with a left-handed Cartesian coordinate system to detect collisions between the phantoms and the player. Angles were converted between 0 and 360 degrees to maintain consistent comparisons. Collisions between the flashlight beam and the phantoms were detected using distance and by calculating the offset inverse tangent (x axis over y axis instead of y axis over x) between the two points.
