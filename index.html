@@ -33,12 +33,21 @@
 
         var ctx = canvasEl.getContext("2d");
         var game = new Phantoms.Game();
-        new Phantoms.GameView(game, ctx).start();
+        var view = new Phantoms.GameView(game, ctx).start();
+
+        function resetGame() {
+          game = new Phantoms.Game();
+          view = new Phantoms.GameView(game, ctx).start();
+        }
 
         key("enter", function () {
-          var game = new Phantoms.Game();
-          new Phantoms.GameView(game, ctx).start();
-        }.bind(this));
+          if(game.playing){
+            resetGame();
+          } else {
+            game.togglePlaying();
+          }
+        });
+
       })();
     </script>
   </body>
