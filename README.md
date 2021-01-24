@@ -1,3 +1,5 @@
+## Note this project is archived
+
 # PHANTOMS
 
 Phantoms is an interactive browser game inspired by Asteroids.
